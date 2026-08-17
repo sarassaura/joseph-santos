@@ -28,6 +28,29 @@ main {
     flex-direction: column;
 }
 
+@keyframes glowing {
+    0% { 
+        background-position: 0 0;
+    }
+    50% { background-position: 400% 0; }
+    100% {
+        background-position: 0 0; 
+    }
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes move {
+  0% { transform: translate(0px, 0px) scale(1); }
+  50% { transform: translate(40px, -60px) scale(1.2); }
+  100% { transform: translate(-20px, 20px) scale(0.9); }
+}
+
 .landing-page {
     display: flex;
     flex-direction: column;
@@ -187,24 +210,6 @@ section {
                 }
             }
 
-            @keyframes glowing {
-                0% { 
-                    background-position: 0 0;
-                }
-                50% { background-position: 400% 0; }
-                100% {
-                    background-position: 0 0; 
-                }
-            }
-            @keyframes spin {
-                from {
-                    transform: rotate(0deg);
-                }
-                to {
-                    transform: rotate(360deg);
-                }
-            }
-
             .glow-on-hover {
                 border: none;
                 outline: none;
@@ -268,12 +273,6 @@ section {
 p, h1, h2 {
     margin: 0;
     color: var(--white);
-}
-
-@keyframes move {
-  0% { transform: translate(0px, 0px) scale(1); }
-  50% { transform: translate(40px, -60px) scale(1.2); }
-  100% { transform: translate(-20px, 20px) scale(0.9); }
 }
 
 .blob {
