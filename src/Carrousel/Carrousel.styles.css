@@ -1,0 +1,58 @@
+.carrousel {
+  background-color: var(--background-elevated);
+
+  &:hover {
+    svg {
+      filter: drop-shadow(0px 0px 6px var(--green));
+    }
+  }
+}
+
+.icon-carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.icon-carousel__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: max-content;
+
+  animation: scroll 30s linear infinite;
+}
+
+.icon-carousel:hover .icon-carousel__container {
+  animation-play-state: paused;
+}
+
+.icon-carousel__item {
+  flex: 0 0 60px;
+  width: 60px;
+  height: 80px;
+  flex-direction: column;
+  padding: 8px 0px;
+  gap: 8px;
+  font-family: "Inter", sans-serif;
+
+  margin-right: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+svg {
+  filter: drop-shadow(0px 0px 12px var(--green)) invert(75%);
+  transition: filter 0.3s ease;
+}
