@@ -306,10 +306,11 @@ p, h1, h2, h3 {
     align-items: center;
     padding: 32px 24px;
     height: fit-content;
+    flex-direction: column;
 
     @media screen and (min-width: 640px) {
-        align-items: unset;
-        justify-content: center;
+        align-items: center;
+        justify-content: unset;
     }
     @media screen and (min-width: 768px) {
         
@@ -319,6 +320,16 @@ p, h1, h2, h3 {
     }
     @media screen and (min-width: 1280px) {
         
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+
+        @media screen and (min-width: 640px) {
+            margin-bottom: 1.5rem;
+        }
     }
 }
 
@@ -417,6 +428,29 @@ p, h1, h2, h3 {
             @media screen and (min-width: 1280px) {
                 
             }
+        }
+    }
+}
+
+.service-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    height: fit-content;
+    padding: 20px 0px;
+
+    font-family: 'Inter', sans-serif;
+
+
+    h2 {
+        font-size: 2rem;
+        margin-block: 1rem;
+        text-align: center;
+
+        @media screen and (min-width: 640px) {
+            margin-bottom: 1.5rem;
         }
     }
 }

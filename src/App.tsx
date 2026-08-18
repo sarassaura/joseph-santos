@@ -9,6 +9,7 @@ import report5 from './assets/report5.png';
 import report6 from './assets/report6.png';
 import report9 from './assets/report9.png';
 import report8 from './assets/report8.png';
+import { Timeline } from './Timeline/Timeline';
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -139,7 +140,12 @@ function App() {
           </section>
         </div>
         <IconCarousel />
+        <div className='page service-page'>
+            <h2>Conheça nossos serviços</h2>
+            <Timeline />
+        </div>
         <div className='page grid-page'>
+          <h2>Histórias de Sucesso!</h2>
           <div className='grid-container'>
             {testimonials.map((t) => (
               <div className={`box box-${t.id}`} style={{gridArea: `box-${t.id}`}} key={`box-${t.id}`}>
