@@ -1,4 +1,5 @@
 .carrousel {
+  overflow: clip;
   background-color: var(--background-elevated);
 
   &:hover {
