@@ -1,18 +1,18 @@
-import { Amazon, Ifood, Itau, MercadoLivre } from '../icons';
+import { Amazon, BMG, Bradesco, BTG, Honda, Ifood, Itau, MercadoLivre, Safira, Santander, Vivo, XP } from '../icons';
 import './Carrousel.styles.css'
 
 const icons = [
   {name: "Itaú", Icon: Itau},
-  {name: "Santander", Icon: MercadoLivre},
-  {name: "Honda", Icon: Ifood},
-  {name: "Vivo", Icon: Amazon},
+  {name: "Santander", Icon: Santander},
+  {name: "Honda", Icon: Honda},
+  {name: "Vivo", Icon: Vivo},
   {name: "Mercado Livre", Icon: MercadoLivre},
   {name: "Amazon", Icon: Amazon},
-  {name: "Bradesco", Icon: Itau},
-  {name: "BTG", Icon: Ifood},
-  {name: "Safira", Icon: MercadoLivre},
-  {name: "BMG", Icon: Amazon},
-  {name: "XP", Icon: MercadoLivre},
+  {name: "Bradesco", Icon: Bradesco},
+  {name: "BTG", Icon: BTG},
+  {name: "Safira", Icon: Safira},
+  {name: "BMG", Icon: BMG},
+  {name: "XP", Icon: XP},
   {name: "Ifood", Icon: Ifood},
 ];
 
