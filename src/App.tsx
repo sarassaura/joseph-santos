@@ -2,13 +2,14 @@ import { useEffect } from 'react';
 import './App.css'
 import { IconCarousel } from './Carrousel/Carrousel'
 import { animate, motion, useMotionValue, useScroll, useTransform } from "motion/react"
-import { Instagram, Linkedin, Whatsapp } from './icons';
+import { Linkedin, Whatsapp, Youtube } from './icons';
 import report1 from './assets/report1.png';
 import report2 from './assets/report2.png';
 import report5 from './assets/report5.png';
 import report6 from './assets/report6.png';
 import report9 from './assets/report9.png';
 import report8 from './assets/report8.png';
+import perfil from './assets/perfil.png'
 import { Timeline } from './Timeline/Timeline';
 
 function App() {
@@ -100,10 +101,10 @@ function App() {
           <section className='about'>
               <div className='social'>
                 <a                
-                  href="https://www.instagram.com/perfil.aprovado/" 
+                  href="https://youtube.com/@joseph-perfilaprovado?si=hNC6llQs4eg_o3o8" 
                   target="_blank" 
                   rel="noopener noreferrer">
-                  <Instagram />
+                  <Youtube />
                 </a>
                 <a 
                   href="https://www.linkedin.com/in/josephsantoss/" 
@@ -117,6 +118,11 @@ function App() {
                   rel="noopener noreferrer">
                   <Whatsapp />
                 </a>
+              </div>
+              <div className='perfil'>
+                <h3 className='perfil-marketing'>+5 Anos<br></br>de RH</h3>
+                <img className="perfil-photo" src={perfil} alt="perfil" />
+                <h3 className='perfil-name'>Joseph Santos</h3>
               </div>
           </section>
           <section className='marketing'>
