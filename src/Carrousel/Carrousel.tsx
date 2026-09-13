@@ -16,7 +16,7 @@ const icons = [
   {name: "Ifood", Icon: Ifood},
 ];
 
-const carouselIcons = [...icons, ...icons];
+const carouselIcons = [...icons, ...icons, ...icons];
 
 export function IconCarousel() {
   return (
